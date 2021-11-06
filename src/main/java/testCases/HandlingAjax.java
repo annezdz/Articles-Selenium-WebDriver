@@ -32,7 +32,5 @@ public class HandlingAjax {
         driver.findElement(By.xpath("//input[@id='fromPlaceName']")).sendKeys(Keys.DOWN);
         driver.findElement(By.xpath("//input[@id='fromPlaceName']")).sendKeys(Keys.DOWN);
         System.out.println(driver.findElement(By.xpath("//input[@id='fromPlaceName']")).getAttribute("value"));
-
-
     }
 }
