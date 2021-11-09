@@ -8,7 +8,7 @@ public class FirefoxExample {
     public static void main(String[] args) {
 
 //        System.setProperty("webdriver.gecko.driver",
-//                "C:\\utils\\geckodriver-v0.30.0-win64\\geckodriver.exe");
+////                "C:\\utils\\geckodriver-v0.30.0-win64\\geckodriver.exe");
 
         WebDriverManager.firefoxdriver().setup();
 
