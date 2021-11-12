@@ -11,10 +11,9 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestResizable {
+public class DragAndDropExample {
 
-
-    public static WebDriver driver;
+    public static WebDriver driver = null;
 
     public static void main(String[] args) {
 
@@ -25,15 +24,15 @@ public class TestResizable {
         FirefoxOptions opt = new FirefoxOptions();
         opt.setProfile(testprofile);
         driver = new FirefoxDriver(opt);
-        driver.get("https://jqueryui.com/resources/demos/resizable/default.html");
+        driver.get("https://jqueryui.com/resources/demos/droppable/default.html");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-        WebElement resizable = driver.findElement(By.xpath("//div[@class='ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se']"));
+        WebElement draggable = driver.findElement(By.id("draggable"));
+        WebElement droppable = driver.findElement(By.id("droppable"));
 
         Actions actions = new Actions(driver);
-        actions.dragAndDropBy(resizable, 400,400).perform();
-
+        actions.dragAndDrop(draggable, droppable).perform();
 
     }
 }
