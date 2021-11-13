@@ -21,7 +21,7 @@ public class TestIFrames {
         String fileName = d.toString().replace(":", "_").replace(" ", "_")+".jpg";
 
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(screenshot, new File(".//screenshot//"+fileName));
+        FileUtils.copyFile(screenshot, new File("src//main//resources//screenshoots"+fileName));
 
     }
 

@@ -1,2 +1,4 @@
-package seleniumWebDriverAdvanceFeatures;public class TestTimeStamp {
+package seleniumWebDriverAdvanceFeatures;
+
+public class TestTimeStamp {
 }
