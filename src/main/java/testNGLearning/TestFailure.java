@@ -3,7 +3,7 @@ package testNGLearning;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
-public class TestFailure {
+public class TestFailure extends BaseTest{
 
     @Test
     public void doLogin(){

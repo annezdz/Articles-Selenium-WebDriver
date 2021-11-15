@@ -6,7 +6,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.sql.SQLOutput;
 
-public class TestCase2 {
+public class TestCase2 extends BaseTest{
 
     @Test(groups = "smoke")
     public void validateTitles(){
