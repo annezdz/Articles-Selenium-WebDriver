@@ -11,7 +11,7 @@ Some Articles about Selenium WebDriver and exercises by Rahul Ahora - Udemy
 ## Handle Tab, New Windows and Pop Ups
 ## Actions - Mouse
 ## Capturing Screenshot
-## Hnadling Frames
+## Handling Frames
 ## Handling WebTables
 ## Handling Ajax
 and so on
