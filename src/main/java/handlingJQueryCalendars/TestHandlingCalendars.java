@@ -109,7 +109,6 @@ public class TestHandlingCalendars {
 
     }
 
-
     public static void getCurrentDateMonthYear(){
         Calendar calendar = Calendar.getInstance();
         currentDay = calendar.get(Calendar.DAY_OF_MONTH);
