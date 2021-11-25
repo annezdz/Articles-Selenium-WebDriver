@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression Suit">
+<suite name="Parallel Suit" parallel="tests">
     <test verbose="2" preserve-order="true"
-          name="TestParametersFromXML Test">
+          name="Firefox Test">
         <parameter name="browser" value="firefox"></parameter>
-        <parameter name="env" value="qa"></parameter>
 
         <classes>
-            <class name="parameterizedTests.TestParametersFromXML"/>
+            <class name="parallelTest.TestBrowser"/>
         </classes>
     </test>
     <test verbose="2" preserve-order="true"
-          name="TestParameters2FromXML Test">
+          name="Chrome Test">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="parameterizedTests.TestParametersFromXML"/>
-            <parameter name="env" value="UAT"></parameter>
+            <class name="parallelTest.TestBrowser"/>
 
         </classes>
     </test>
